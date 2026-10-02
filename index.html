@@ -1,0 +1,2555 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Portfolio von Mohammedi Maisaa – Automatisierungstechnik, industrielle Informatik, Webentwicklung und Embedded Systems.">
+
+    <title>Mohammedi Maisaa | Portfolio</title>
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at 80% 10%,
+                    rgba(75, 190, 235, 0.15),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 10% 40%,
+                    rgba(110, 85, 220, 0.10),
+                    transparent 30%
+                ),
+                #07111f;
+
+            color: #edf4ff;
+            line-height: 1.6;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        ul {
+            list-style: none;
+        }
+
+
+        .container {
+            width: 90%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+
+        /* =====================================================
+           NAVIGATION
+        ====================================================== */
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+
+            background: rgba(7, 17, 31, 0.86);
+
+            backdrop-filter: blur(15px);
+
+            border-bottom:
+                1px solid rgba(255, 255, 255, 0.08);
+        }
+
+
+        .navbar {
+            width: 90%;
+            max-width: 1200px;
+            height: 75px;
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: -2px;
+        }
+
+
+        .logo span {
+            color: #63d5ff;
+        }
+
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+
+        .nav-links a {
+            color: #9eafc5;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+
+        .nav-links a:hover {
+            color: #63d5ff;
+        }
+
+
+        .menu-button {
+            display: none;
+
+            background: none;
+            border: none;
+
+            color: white;
+
+            font-size: 28px;
+
+            cursor: pointer;
+        }
+
+
+        /* =====================================================
+           HERO
+        ====================================================== */
+
+        .hero {
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+
+            padding-top: 90px;
+        }
+
+
+        .hero-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                1.2fr 0.8fr;
+
+            gap: 70px;
+
+            align-items: center;
+        }
+
+
+        .small-title {
+            color: #63d5ff;
+
+            font-size: 12px;
+
+            font-weight: bold;
+
+            letter-spacing: 4px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .hero h1 {
+            font-size: clamp(60px, 8vw, 105px);
+
+            line-height: 0.95;
+
+            letter-spacing: -6px;
+        }
+
+
+        .hero h1 span {
+            color: #63d5ff;
+        }
+
+
+        .hero h2 {
+            margin-top: 30px;
+
+            font-size: 23px;
+
+            color: #d0dceb;
+
+            line-height: 1.3;
+        }
+
+
+        .hero-description {
+            max-width: 650px;
+
+            color: #9eafc5;
+
+            margin-top: 20px;
+
+            font-size: 16px;
+        }
+
+
+        .hero-buttons {
+            display: flex;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
+
+            margin-top: 30px;
+        }
+
+
+        .button {
+            padding: 13px 20px;
+
+            border-radius: 9px;
+
+            font-weight: bold;
+
+            font-size: 14px;
+
+            transition: 0.3s;
+        }
+
+
+        .button-main {
+            background: #63d5ff;
+
+            color: #06111d;
+        }
+
+
+        .button-main:hover {
+            transform: translateY(-3px);
+        }
+
+
+        .button-outline {
+            border:
+                1px solid rgba(255, 255, 255, 0.15);
+
+            color: white;
+        }
+
+
+        .button-outline:hover {
+            border-color: #63d5ff;
+
+            color: #63d5ff;
+        }
+
+
+        .hero-info {
+            margin-top: 35px;
+
+            display: flex;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+
+            color: #8296ae;
+
+            font-size: 12px;
+        }
+
+
+        /* =====================================================
+           HERO TECHNICAL VISUAL
+        ====================================================== */
+
+        .hero-visual {
+            height: 450px;
+
+            border-radius: 30px;
+
+            position: relative;
+
+            overflow: hidden;
+
+            background:
+
+                linear-gradient(
+                    145deg,
+                    rgba(99, 213, 255, 0.14),
+                    transparent 45%
+                ),
+
+                linear-gradient(
+                    330deg,
+                    rgba(125, 100, 255, 0.16),
+                    transparent 50%
+                ),
+
+                #0d2035;
+
+            border:
+                1px solid rgba(255, 255, 255, 0.1);
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+        }
+
+
+        .visual-grid {
+            position: absolute;
+
+            inset: 0;
+
+            background-image:
+
+                linear-gradient(
+                    rgba(99, 213, 255, 0.045) 1px,
+                    transparent 1px
+                ),
+
+                linear-gradient(
+                    90deg,
+                    rgba(99, 213, 255, 0.045) 1px,
+                    transparent 1px
+                );
+
+            background-size: 35px 35px;
+
+            opacity: 0.8;
+        }
+
+
+        .tech-center {
+            position: relative;
+
+            z-index: 2;
+
+            width: 150px;
+
+            height: 150px;
+
+            border-radius: 50%;
+
+            border:
+                1px solid rgba(99, 213, 255, 0.4);
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background:
+                rgba(99, 213, 255, 0.05);
+
+            box-shadow:
+                0 0 50px rgba(99, 213, 255, 0.08);
+        }
+
+
+        .tech-center-inner {
+            width: 95px;
+
+            height: 95px;
+
+            border-radius: 50%;
+
+            border:
+                1px solid rgba(255, 255, 255, 0.18);
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: #63d5ff;
+
+            font-size: 34px;
+
+            font-weight: bold;
+        }
+
+
+        .tech-ring {
+            position: absolute;
+
+            width: 230px;
+
+            height: 230px;
+
+            border-radius: 50%;
+
+            border:
+                1px solid rgba(99, 213, 255, 0.14);
+        }
+
+
+        .tech-ring-two {
+            position: absolute;
+
+            width: 340px;
+
+            height: 340px;
+
+            border-radius: 50%;
+
+            border:
+                1px solid rgba(125, 100, 255, 0.12);
+        }
+
+
+        .tech-card {
+            position: absolute;
+
+            z-index: 3;
+
+            padding: 12px 15px;
+
+            border-radius: 10px;
+
+            background:
+                rgba(7, 17, 31, 0.78);
+
+            border:
+                1px solid rgba(255, 255, 255, 0.10);
+
+            backdrop-filter: blur(10px);
+
+            font-size: 11px;
+
+            letter-spacing: 1px;
+
+            color: #b9c9da;
+        }
+
+
+        .tech-card strong {
+            display: block;
+
+            color: #63d5ff;
+
+            font-size: 10px;
+
+            margin-bottom: 3px;
+
+            letter-spacing: 2px;
+        }
+
+
+        .tech-card.one {
+            top: 45px;
+            left: 25px;
+        }
+
+
+        .tech-card.two {
+            top: 120px;
+            right: 20px;
+        }
+
+
+        .tech-card.three {
+            bottom: 95px;
+            left: 30px;
+        }
+
+
+        .tech-card.four {
+            bottom: 35px;
+            right: 25px;
+        }
+
+
+        .visual-label {
+            position: absolute;
+
+            left: 25px;
+
+            right: 25px;
+
+            bottom: 25px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            font-size: 11px;
+
+            letter-spacing: 2px;
+
+            color: #8296ae;
+
+            z-index: 5;
+        }
+
+
+        .visual-label strong {
+            color: white;
+        }
+
+
+        /* =====================================================
+           SECTIONS
+        ====================================================== */
+
+        .section {
+            padding: 120px 0;
+        }
+
+
+        .section-title {
+            margin-bottom: 55px;
+        }
+
+
+        .section-title > p {
+            color: #63d5ff;
+
+            font-size: 12px;
+
+            font-weight: bold;
+
+            letter-spacing: 4px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .section-title h2 {
+            font-size: clamp(42px, 5vw, 65px);
+
+            line-height: 1;
+
+            letter-spacing: -4px;
+        }
+
+
+        .section-title h2 span {
+            color: #63d5ff;
+        }
+
+
+        .section-description {
+            color: #8498b0;
+
+            max-width: 650px;
+
+            margin-top: 20px;
+        }
+
+
+        /* =====================================================
+           ABOUT
+        ====================================================== */
+
+        .about-grid {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 70px;
+        }
+
+
+        .about-text p {
+            color: #9eafc5;
+
+            margin-bottom: 20px;
+
+            max-width: 600px;
+        }
+
+
+        .about-cards {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 15px;
+        }
+
+
+        .info-card {
+            padding: 25px;
+
+            background:
+                rgba(255, 255, 255, 0.03);
+
+            border:
+                1px solid rgba(255, 255, 255, 0.09);
+
+            border-radius: 15px;
+        }
+
+
+        .info-card span {
+            color: #63d5ff;
+
+            font-size: 10px;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+        }
+
+
+        .info-card h3 {
+            margin-top: 8px;
+
+            font-size: 19px;
+        }
+
+
+        .info-card p {
+            color: #a0b1c7;
+
+            margin-top: 5px;
+        }
+
+
+        .info-card small {
+            color: #667b94;
+        }
+
+
+        /* =====================================================
+           PROJECTS
+        ====================================================== */
+
+        .projects-section {
+            background:
+                rgba(255, 255, 255, 0.015);
+        }
+
+
+        .projects-grid {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 20px;
+        }
+
+
+        .project-card {
+            padding: 30px;
+
+            border-radius: 20px;
+
+            border:
+                1px solid rgba(255, 255, 255, 0.09);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255, 255, 255, 0.04),
+                    rgba(255, 255, 255, 0.015)
+                );
+
+            transition: 0.3s;
+        }
+
+
+        .project-card:hover {
+            transform: translateY(-7px);
+
+            border-color:
+                rgba(99, 213, 255, 0.4);
+        }
+
+
+        .project-card.featured {
+            grid-row: span 2;
+        }
+
+
+        .project-number {
+            color: #63d5ff;
+
+            font-weight: bold;
+
+            font-size: 14px;
+        }
+
+
+        .project-icon {
+            font-size: 45px;
+
+            font-weight: bold;
+
+            color: #63d5ff;
+
+            margin-top: 50px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .project-category {
+            color: #73dfae;
+
+            font-size: 10px;
+
+            letter-spacing: 2px;
+
+            font-weight: bold;
+        }
+
+
+        .project-card h3 {
+            font-size: 25px;
+
+            margin-top: 12px;
+
+            line-height: 1.2;
+        }
+
+
+        .project-card h4 {
+            color: #b7c9dd;
+
+            font-size: 13px;
+
+            margin-top: 10px;
+        }
+
+
+        .project-card p {
+            color: #8fa2b9;
+
+            font-size: 14px;
+
+            margin-top: 18px;
+        }
+
+
+        .tags {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 7px;
+
+            margin-top: 22px;
+        }
+
+
+        .tags span {
+            padding: 6px 9px;
+
+            border-radius: 6px;
+
+            font-size: 10px;
+
+            color: #bde9fa;
+
+            background:
+                rgba(99, 213, 255, 0.08);
+
+            border:
+                1px solid rgba(99, 213, 255, 0.12);
+        }
+
+
+        .project-button {
+            display: inline-block;
+
+            margin-top: 25px;
+
+            padding: 11px 15px;
+
+            border-radius: 8px;
+
+            border:
+                1px solid rgba(255, 255, 255, 0.13);
+
+            font-size: 12px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+
+        .project-button:hover {
+            color: #63d5ff;
+
+            border-color: #63d5ff;
+        }
+
+
+        /* =====================================================
+           PROCESS
+        ====================================================== */
+
+        .process-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 25px;
+        }
+
+
+        .process-card {
+            padding-top: 20px;
+
+            border-top:
+                1px solid rgba(255, 255, 255, 0.1);
+        }
+
+
+        .process-card span {
+            color: #63d5ff;
+
+            font-weight: bold;
+        }
+
+
+        .process-card h3 {
+            margin-top: 15px;
+
+            font-size: 20px;
+        }
+
+
+        .process-card p {
+            color: #879ab2;
+
+            font-size: 13px;
+
+            margin-top: 8px;
+        }
+
+
+        /* =====================================================
+           SKILLS
+        ====================================================== */
+
+        .skills-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .skill-card {
+            padding: 30px;
+
+            border-radius: 18px;
+
+            background: #0d2035;
+
+            border:
+                1px solid rgba(255, 255, 255, 0.09);
+        }
+
+
+        .skill-icon {
+            font-size: 30px;
+
+            color: #63d5ff;
+        }
+
+
+        .skill-card h3 {
+            margin-top: 15px;
+        }
+
+
+        .skill-list {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 7px;
+
+            margin-top: 20px;
+        }
+
+
+        .skill-list span {
+            padding: 6px 8px;
+
+            background:
+                rgba(99, 213, 255, 0.07);
+
+            border:
+                1px solid rgba(99, 213, 255, 0.1);
+
+            border-radius: 6px;
+
+            font-size: 10px;
+
+            color: #b8cce0;
+        }
+
+
+        /* =====================================================
+           DOCUMENTS
+        ====================================================== */
+
+        .documents-list {
+            border-top:
+                1px solid rgba(255, 255, 255, 0.1);
+        }
+
+
+        .document {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding: 22px 5px;
+
+            border-bottom:
+                1px solid rgba(255, 255, 255, 0.1);
+
+            transition: 0.3s;
+        }
+
+
+        .document:hover {
+            padding-left: 15px;
+
+            color: #63d5ff;
+        }
+
+
+        .document strong {
+            display: block;
+
+            font-size: 15px;
+        }
+
+
+        .document span {
+            color: #7489a1;
+
+            font-size: 11px;
+        }
+
+
+        .document b {
+            font-size: 20px;
+        }
+
+
+        /* =====================================================
+           CONTACT
+        ====================================================== */
+
+        .contact-section {
+            padding: 120px 0;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    transparent,
+                    rgba(99, 213, 255, 0.05)
+                );
+        }
+
+
+        .contact-grid {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 70px;
+
+            align-items: center;
+        }
+
+
+        .contact-grid h2 {
+            font-size: clamp(42px, 5vw, 65px);
+
+            line-height: 1;
+
+            letter-spacing: -4px;
+        }
+
+
+        .contact-grid h2 span {
+            color: #63d5ff;
+        }
+
+
+        .contact-grid > div > p:last-child {
+            margin-top: 20px;
+
+            color: #8da0b8;
+
+            max-width: 600px;
+        }
+
+
+        .contact-card {
+            background: #0d2035;
+
+            border:
+                1px solid rgba(255, 255, 255, 0.09);
+
+            border-radius: 18px;
+
+            padding: 25px;
+        }
+
+
+        .contact-card div {
+            padding: 18px 0;
+
+            border-bottom:
+                1px solid rgba(255, 255, 255, 0.08);
+        }
+
+
+        .contact-card div:last-child {
+            border-bottom: none;
+        }
+
+
+        .contact-card span {
+            display: block;
+
+            color: #63d5ff;
+
+            font-size: 10px;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 5px;
+        }
+
+
+        .contact-card a {
+            color: #d9e8f7;
+        }
+
+
+        .contact-card a:hover {
+            color: #63d5ff;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ====================================================== */
+
+        footer {
+            border-top:
+                1px solid rgba(255, 255, 255, 0.08);
+
+            padding: 25px 0;
+        }
+
+
+        .footer-container {
+            width: 90%;
+
+            max-width: 1150px;
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            color: #62758d;
+
+            font-size: 11px;
+        }
+
+
+        /* =====================================================
+           ANIMATION
+        ====================================================== */
+
+        .animate {
+            opacity: 0;
+
+            transform: translateY(25px);
+
+            transition:
+                opacity 0.7s ease,
+                transform 0.7s ease;
+        }
+
+
+        .animate.visible {
+            opacity: 1;
+
+            transform: translateY(0);
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ====================================================== */
+
+        @media (max-width: 850px) {
+
+            .menu-button {
+                display: block;
+            }
+
+
+            .nav-links {
+                display: none;
+
+                position: absolute;
+
+                top: 75px;
+
+                left: 5%;
+
+                right: 5%;
+
+                padding: 20px;
+
+                flex-direction: column;
+
+                gap: 18px;
+
+                background: #0b1b2d;
+
+                border:
+                    1px solid rgba(255, 255, 255, 0.1);
+
+                border-radius: 12px;
+            }
+
+
+            .nav-links.active {
+                display: flex;
+            }
+
+
+            .hero-container {
+                grid-template-columns: 1fr;
+            }
+
+
+            .hero-visual {
+                height: 350px;
+            }
+
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .project-card.featured {
+                grid-row: auto;
+            }
+
+
+            .process-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 550px) {
+
+            .hero h1 {
+                font-size: 58px;
+
+                letter-spacing: -4px;
+            }
+
+
+            .section {
+                padding: 80px 0;
+            }
+
+
+            .section-title h2 {
+                font-size: 43px;
+            }
+
+
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .hero-info {
+                flex-direction: column;
+
+                gap: 8px;
+            }
+
+
+            .footer-container {
+                flex-direction: column;
+
+                gap: 8px;
+            }
+
+
+            .tech-card {
+                transform: scale(0.85);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                MM<span>.</span>
+            </a>
+
+
+            <button class="menu-button" id="menuButton">
+                ☰
+            </button>
+
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="#home">Start</a>
+                </li>
+
+                <li>
+                    <a href="#about">Über mich</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projekte</a>
+                </li>
+
+                <li>
+                    <a href="#skills">Kompetenzen</a>
+                </li>
+
+                <li>
+                    <a href="#documents">Dokumente</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Kontakt</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-container">
+
+
+            <div class="hero-text animate">
+
+                <p class="small-title">
+                    PORTFOLIO · TECHNIK & PROJEKTE
+                </p>
+
+
+                <h1>
+
+                    Mohammedi
+                    <br>
+
+                    <span>Maisaa</span>
+
+                </h1>
+
+
+                <h2>
+
+                    Automatisierungstechnik
+                    <br>
+                    & industrielle Informatik
+
+                </h2>
+
+
+                <p class="hero-description">
+
+                    Studentin der Automatisierungstechnik mit praktischen Projekten
+                    in Automatisierung, SPS/SCADA, Sensorik, Embedded Systems,
+                    Python und Webentwicklung.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="button button-main">
+                        Meine Projekte
+                    </a>
+
+
+                    <a href="documents/CVDRN_une_seule_page.pdf"
+                        target="_blank"
+                        class="button button-outline">
+
+                        Lebenslauf öffnen
+
+                    </a>
+
+                </div>
+
+
+                <div class="hero-info">
+
+                    <span>
+                        📍 Tlemcen, Algerien
+                    </span>
+
+                    <span>
+                        🎓 Automatisierungstechnik
+                    </span>
+
+                    <span>
+                        💻 Technik & Software
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 TECHNICAL VISUAL
+            ================================================== -->
+
+            <div class="hero-visual animate">
+
+                <div class="visual-grid"></div>
+
+                <div class="tech-ring"></div>
+
+                <div class="tech-ring-two"></div>
+
+
+                <div class="tech-center">
+
+                    <div class="tech-center-inner">
+                        &lt;/&gt;
+                    </div>
+
+                </div>
+
+
+                <div class="tech-card one">
+
+                    <strong>
+                        AUTOMATION
+                    </strong>
+
+                    SPS · SCADA
+
+                </div>
+
+
+                <div class="tech-card two">
+
+                    <strong>
+                        EMBEDDED
+                    </strong>
+
+                    Arduino · Sensorik
+
+                </div>
+
+
+                <div class="tech-card three">
+
+                    <strong>
+                        SOFTWARE
+                    </strong>
+
+                    Python · C++ · Web
+
+                </div>
+
+
+                <div class="tech-card four">
+
+                    <strong>
+                        DEVELOPMENT
+                    </strong>
+
+                    Build · Test · Improve
+
+                </div>
+
+
+                <div class="visual-label">
+
+                    <span>
+                        TECHNICAL PORTFOLIO
+                    </span>
+
+                    <strong>
+                        2026
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+    <section class="section" id="about">
+
+        <div class="container">
+
+
+            <div class="section-title animate">
+
+                <p>
+                    01 · ÜBER MICH
+                </p>
+
+                <h2>
+
+                    Technik verstehen.
+                    <span>
+                        Praktisch umsetzen.
+                    </span>
+
+                </h2>
+
+            </div>
+
+
+
+            <div class="about-grid">
+
+
+                <div class="about-text animate">
+
+                    <p>
+
+                        Ich studiere Automatisierungstechnik und industrielle
+                        Informatik und interessiere mich besonders für die
+                        Verbindung von Automatisierung, Elektronik und Software.
+
+                    </p>
+
+
+                    <p>
+
+                        Während meines Studiums habe ich verschiedene technische
+                        Projekte realisiert. Dabei konnte ich praktische Erfahrungen
+                        mit SPS, SCADA-Systemen, Sensoren, Arduino, Python und
+                        Webtechnologien sammeln.
+
+                    </p>
+
+
+                    <p>
+
+                        Dieses Portfolio zeigt ausgewählte Projekte und gibt einen
+                        Einblick in meine technischen Kenntnisse, meine Arbeitsweise
+                        und meine Motivation, neue Technologien praktisch zu erlernen.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="about-cards animate">
+
+
+                    <div class="info-card">
+
+                        <span>
+                            STUDIUM
+                        </span>
+
+                        <h3>
+                            Automatisierungstechnik
+                        </h3>
+
+                        <p>
+                            Automatisierungstechnik und industrielle Informatik
+                        </p>
+
+                        <small>
+                            2025 – 2026
+                        </small>
+
+                    </div>
+
+
+
+                    <div class="info-card">
+
+                        <span>
+                            BACHELOR / LICENCE
+                        </span>
+
+                        <h3>
+                            Automatisierungstechnik
+                        </h3>
+
+                        <p>
+                            Université Abou Bekr Belkaid, Tlemcen
+                        </p>
+
+                        <small>
+                            2022 – 2025
+                        </small>
+
+                    </div>
+
+
+
+                    <div class="info-card">
+
+                        <span>
+                            SPRACHEN
+                        </span>
+
+                        <h3>
+                            Deutsch B1 · Französisch B2
+                        </h3>
+
+                        <p>
+                            Englisch B1 · Arabisch Muttersprache
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PROJECTS
+    ====================================================== -->
+
+    <section class="section projects-section" id="projects">
+
+        <div class="container">
+
+
+            <div class="section-title animate">
+
+                <p>
+                    02 · PROJEKTE
+                </p>
+
+                <h2>
+
+                    Meine
+                    <span>
+                        Projekte
+                    </span>
+
+                </h2>
+
+                <p class="section-description">
+
+                    Drei ausgewählte Projekte aus Webentwicklung,
+                    Automatisierung und Embedded Systems.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="projects-grid">
+
+
+                <!-- PROJECT 1 -->
+
+                <article class="project-card featured animate">
+
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+
+                    <div class="project-icon">
+                        WEB
+                    </div>
+
+
+                    <span class="project-category">
+                        WEBENTWICKLUNG
+                    </span>
+
+
+                    <h3>
+                        StudyTRACK
+                    </h3>
+
+
+                    <h4>
+                        Webanwendung zur Studienorganisation
+                    </h4>
+
+
+                    <p>
+
+                        StudyTRACK ist eine selbst entwickelte Webanwendung
+                        zur Organisation des Studiums.
+
+                    </p>
+
+
+                    <p>
+
+                        Die Anwendung ermöglicht es, Fächer und Aufgaben zu
+                        verwalten und den Lernfortschritt zu verfolgen.
+
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>
+                            HTML
+                        </span>
+
+                        <span>
+                            CSS
+                        </span>
+
+                        <span>
+                            JavaScript
+                        </span>
+
+                        <span>
+                            LocalStorage
+                        </span>
+
+                    </div>
+
+
+                    <!-- AKTUELLER STUDYTRACK LINK -->
+
+                    <a href="https://meissamhd40-ui.github.io/stddtrack/index.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-button">
+
+                        Live-Website öffnen ↗
+
+                    </a>
+
+
+                </article>
+
+
+
+                <!-- PROJECT 2 -->
+
+                <article class="project-card animate">
+
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+
+                    <div class="project-icon">
+                        SPS
+                    </div>
+
+
+                    <span class="project-category">
+                        AUTOMATISIERUNG
+                    </span>
+
+
+                    <h3>
+                        Automatisierung eines Tankfüllstandssystems
+                    </h3>
+
+
+                    <h4>
+                        Siemens S7-300 · WinCC-SCADA
+                    </h4>
+
+
+                    <p>
+
+                        Studienprojekt zur Automatisierung und Überwachung
+                        eines Tanksystems mit Siemens S7-300.
+
+                    </p>
+
+
+                    <p>
+
+                        Das Projekt umfasst unter anderem die Pumpensteuerung
+                        und die Überwachung des Prozesses mit WinCC-SCADA.
+
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>
+                            Siemens S7-300
+                        </span>
+
+                        <span>
+                            SPS
+                        </span>
+
+                        <span>
+                            WinCC
+                        </span>
+
+                        <span>
+                            SCADA
+                        </span>
+
+                    </div>
+
+
+                    <a href="documents/Automatisierung_Tankfuellstand_Ausbildung_final.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-button">
+
+                        Projekt-PDF öffnen ↗
+
+                    </a>
+
+
+                </article>
+
+
+
+                <!-- PROJECT 3 -->
+
+                <article class="project-card animate">
+
+
+                    <div class="project-number">
+                        03
+                    </div>
+
+
+                    <div class="project-icon">
+                        EMB
+                    </div>
+
+
+                    <span class="project-category">
+                        EMBEDDED SYSTEMS
+                    </span>
+
+
+                    <h3>
+                        Nicht-invasive Blutzuckerschätzung
+                    </h3>
+
+
+                    <h4>
+                        Arduino · Sensorik · Python
+                    </h4>
+
+
+                    <p>
+
+                        Abschlussprojekt zur Entwicklung eines automatisierten
+                        und nicht-invasiven Systems zur indirekten Schätzung
+                        von Veränderungen des Blutzuckers anhand physiologischer
+                        Signale.
+
+                    </p>
+
+
+                    <p>
+
+                        Die erfassten Daten werden verarbeitet und mit einer
+                        Python-Schnittstelle visualisiert.
+
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>
+                            Arduino Uno
+                        </span>
+
+                        <span>
+                            TCRT5000
+                        </span>
+
+                        <span>
+                            AD8232
+                        </span>
+
+                        <span>
+                            Python
+                        </span>
+
+                    </div>
+
+
+                    <a href="documents/Nicht-invasive_Blutzuckerschaetzung_Ausbildung_3Seiten_final.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-button">
+
+                        Projekt-PDF öffnen ↗
+
+                    </a>
+
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         WORK PROCESS
+    ====================================================== -->
+
+    <section class="section">
+
+        <div class="container">
+
+
+            <div class="section-title animate">
+
+                <p>
+                    03 · ARBEITSWEISE
+                </p>
+
+                <h2>
+
+                    Von der Idee zur
+                    <span>
+                        Umsetzung
+                    </span>
+
+                </h2>
+
+            </div>
+
+
+
+            <div class="process-grid">
+
+
+                <div class="process-card animate">
+
+                    <span>
+                        01
+                    </span>
+
+                    <h3>
+                        Analysieren
+                    </h3>
+
+                    <p>
+                        Anforderungen und technische Rahmenbedingungen verstehen.
+                    </p>
+
+                </div>
+
+
+
+                <div class="process-card animate">
+
+                    <span>
+                        02
+                    </span>
+
+                    <h3>
+                        Entwickeln
+                    </h3>
+
+                    <p>
+                        Eine technische Lösung Schritt für Schritt umsetzen und programmieren.
+                    </p>
+
+                </div>
+
+
+
+                <div class="process-card animate">
+
+                    <span>
+                        03
+                    </span>
+
+                    <h3>
+                        Testen
+                    </h3>
+
+                    <p>
+                        Funktionen überprüfen, Fehler erkennen und Lösungen verbessern.
+                    </p>
+
+                </div>
+
+
+
+                <div class="process-card animate">
+
+                    <span>
+                        04
+                    </span>
+
+                    <h3>
+                        Dokumentieren
+                    </h3>
+
+                    <p>
+                        Ergebnisse und technische Erkenntnisse strukturiert dokumentieren.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SKILLS
+    ====================================================== -->
+
+    <section class="section" id="skills">
+
+        <div class="container">
+
+
+            <div class="section-title animate">
+
+                <p>
+                    04 · KOMPETENZEN
+                </p>
+
+                <h2>
+
+                    Technische
+                    <span>
+                        Kenntnisse
+                    </span>
+
+                </h2>
+
+            </div>
+
+
+
+            <div class="skills-grid">
+
+
+                <div class="skill-card animate">
+
+                    <div class="skill-icon">
+                        ⚙
+                    </div>
+
+                    <h3>
+                        Automatisierung
+                    </h3>
+
+
+                    <div class="skill-list">
+
+                        <span>
+                            Siemens S7-300
+                        </span>
+
+                        <span>
+                            SIMATIC Manager
+                        </span>
+
+                        <span>
+                            WinCC-SCADA
+                        </span>
+
+                        <span>
+                            SPS
+                        </span>
+
+                        <span>
+                            Pumpensteuerung
+                        </span>
+
+                        <span>
+                            Prozessüberwachung
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="skill-card animate">
+
+                    <div class="skill-icon">
+                        &lt;/&gt;
+                    </div>
+
+                    <h3>
+                        Software & Web
+                    </h3>
+
+
+                    <div class="skill-list">
+
+                        <span>
+                            HTML
+                        </span>
+
+                        <span>
+                            CSS
+                        </span>
+
+                        <span>
+                            JavaScript
+                        </span>
+
+                        <span>
+                            Python
+                        </span>
+
+                        <span>
+                            C++
+                        </span>
+
+                        <span>
+                            Microsoft Office
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="skill-card animate">
+
+                    <div class="skill-icon">
+                        ◉
+                    </div>
+
+                    <h3>
+                        Embedded & Sensorik
+                    </h3>
+
+
+                    <div class="skill-list">
+
+                        <span>
+                            Arduino
+                        </span>
+
+                        <span>
+                            Sensorintegration
+                        </span>
+
+                        <span>
+                            AD8232
+                        </span>
+
+                        <span>
+                            TCRT5000
+                        </span>
+
+                        <span>
+                            Datenerfassung
+                        </span>
+
+                        <span>
+                            Signalverarbeitung
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         DOCUMENTS
+    ====================================================== -->
+
+    <section class="section" id="documents">
+
+        <div class="container">
+
+
+            <div class="section-title animate">
+
+                <p>
+                    05 · DOKUMENTE
+                </p>
+
+                <h2>
+
+                    Meine
+                    <span>
+                        Unterlagen
+                    </span>
+
+                </h2>
+
+                <p class="section-description">
+
+                    Lebenslauf und vollständige Projektdokumentationen
+                    können direkt geöffnet werden.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="documents-list">
+
+
+                <!-- CV -->
+
+                <a href="documents/CVDRN_une_seule_page.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="document animate">
+
+                    <div>
+
+                        <strong>
+                            Lebenslauf
+                        </strong>
+
+                        <span>
+                            CV · PDF
+                        </span>
+
+                    </div>
+
+                    <b>
+                        ↗
+                    </b>
+
+                </a>
+
+
+
+                <!-- AUTOMATION PDF -->
+
+                <a href="documents/Automatisierung_Tankfuellstand_Ausbildung_final.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="document animate">
+
+                    <div>
+
+                        <strong>
+                            Automatisierung eines Tankfüllstandssystems
+                        </strong>
+
+                        <span>
+                            Projekt-Dokumentation · PDF
+                        </span>
+
+                    </div>
+
+                    <b>
+                        ↗
+                    </b>
+
+                </a>
+
+
+
+                <!-- EMBEDDED PDF -->
+
+                <a href="documents/Nicht-invasive_Blutzuckerschaetzung_Ausbildung_3Seiten_final.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="document animate">
+
+                    <div>
+
+                        <strong>
+                            Nicht-invasive Blutzuckerschätzung
+                        </strong>
+
+                        <span>
+                            Abschlussprojekt · PDF
+                        </span>
+
+                    </div>
+
+                    <b>
+                        ↗
+                    </b>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CONTACT
+    ====================================================== -->
+
+    <section class="contact-section" id="contact">
+
+        <div class="container contact-grid">
+
+
+            <div class="animate">
+
+                <p class="small-title">
+                    06 · KONTAKT
+                </p>
+
+
+                <h2>
+
+                    Interesse an meinem
+                    <span>
+                        Profil?
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Für weitere Informationen zu meinem Werdegang,
+                    meinen Projekten oder meinem technischen Profil
+                    können Sie mich gerne kontaktieren.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="contact-card animate">
+
+
+                <div>
+
+                    <span>
+                        E-MAIL
+                    </span>
+
+                    <a href="mailto:meissamhd40@gmail.com">
+
+                        meissamhd40@gmail.com
+
+                    </a>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        STANDORT
+                    </span>
+
+                    <strong>
+                        Tlemcen, Algerien
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        TELEFON
+                    </span>
+
+                    <strong>
+                        +213 549 793 718
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        LEBENSLAUF
+                    </span>
+
+                    <a href="documents/CVDRN_une_seule_page.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        PDF öffnen ↗
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <span>
+                © 2026 Mohammedi Maisaa
+            </span>
+
+            <span>
+                Technical Portfolio
+            </span>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+
+        /* =================================================
+           MOBILE MENU
+        ================================================== */
+
+        const menuButton =
+            document.getElementById("menuButton");
+
+
+        const navLinks =
+            document.getElementById("navLinks");
+
+
+        menuButton.addEventListener(
+            "click",
+            function () {
+
+                navLinks.classList.toggle("active");
+
+            }
+        );
+
+
+
+        /* =================================================
+           CLOSE MENU AFTER CLICK
+        ================================================== */
+
+        const links =
+            document.querySelectorAll(".nav-links a");
+
+
+        links.forEach(
+            function (link) {
+
+                link.addEventListener(
+                    "click",
+                    function () {
+
+                        navLinks.classList.remove("active");
+
+                    }
+                );
+
+            }
+        );
+
+
+
+        /* =================================================
+           SCROLL ANIMATION
+        ================================================== */
+
+        const animatedElements =
+            document.querySelectorAll(".animate");
+
+
+        const observer =
+            new IntersectionObserver(
+
+                function (entries) {
+
+                    entries.forEach(
+                        function (entry) {
+
+                            if (entry.isIntersecting) {
+
+                                entry.target.classList.add(
+                                    "visible"
+                                );
+
+                            }
+
+                        }
+                    );
+
+                },
+
+                {
+                    threshold: 0.10
+                }
+
+            );
+
+
+        animatedElements.forEach(
+            function (element) {
+
+                observer.observe(element);
+
+            }
+        );
+
+
+    </script>
+
+
+</body>
+
+</html>
